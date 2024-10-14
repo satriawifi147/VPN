@@ -1,15 +1,4 @@
 proxies:
-  - name: VPN1 TLS ✅
-    server: quiz.staging.vidio.com
-    port: 443
-    type: trojan
-    password: 46f5c29b-7025-4f7b-96ee-c9ac28bc7e4f
-    skip-cert-verify: true
-    sni: id-ikd2.estebuh.my.id
-    network: grpc
-    grpc-opts:
-      grpc-service-name: trojan-service
-    udp: true
   - name: VPN2 TLS ✅
     server: quiz.vidio.com
     port: 443
@@ -17,17 +6,6 @@ proxies:
     password: aaf5d9d8-75ca-4bde-98fd-5b11363ca54e
     skip-cert-verify: true
     sni: id-wjy2.estebuh.my.id
-    network: grpc
-    grpc-opts:
-      grpc-service-name: trojan-service
-    udp: true
-  - name: VPN3 TLS ✅
-    server: quiz.int.vidio.com
-    port: 443
-    type: trojan
-    password: a827aaaf-fb9e-45d4-953d-fef417c61e0f
-    skip-cert-verify: true
-    sni: qwrd.stbvpn.xyz
     network: grpc
     grpc-opts:
       grpc-service-name: trojan-service
