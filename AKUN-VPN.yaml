@@ -1,5 +1,5 @@
 proxies:
-  - name: FAST
+  - name: VPN1
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
@@ -10,7 +10,7 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-service
     udp: true
-  - name: AKUN2
+  - name: VPN2
     server: quiz.int.vidio.com
     port: 443
     type: vmess
