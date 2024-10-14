@@ -1,0 +1,31 @@
+proxies:
+  - name: FAST
+    server: quiz.staging.vidio.com
+    port: 443
+    type: trojan
+    password: aaf5d9d8-75ca-4bde-98fd-5b11363ca54e
+    skip-cert-verify: true
+    sni: id-wjy2.estebuh.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-service
+    udp: true
+  - name: AKUN2
+    server: quiz.int.vidio.com
+    port: 443
+    type: vmess
+    uuid: f5614850-4758-4728-8adb-555a978698a5
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-ikd2.estebuh.my.id
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /vmess-tcp
+      headers:
+        Host:
+          - id-ikd2.estebuh.my.id
+    udp: true
