@@ -10,3 +10,27 @@ proxies:
     grpc-opts:
       grpc-service-name: trojan-service
     udp: true
+  - name: IKD
+    server: quiz.staging.vidio.com
+    port: 443
+    type: trojan
+    password: 46f5c29b-7025-4f7b-96ee-c9ac28bc7e4f
+    skip-cert-verify: true
+    sni: id-ikd2.estebuh.my.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: id-ikd2.estebuh.my.id
+    udp: true
+  - name: QWORD
+    server: quiz.vidio.com
+    port: 443
+    type: trojan
+    password: a827aaaf-fb9e-45d4-953d-fef417c61e0f
+    skip-cert-verify: true
+    sni: qwrd.stbvpn.xyz
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-service
+    udp: true
